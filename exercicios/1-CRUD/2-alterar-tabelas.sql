@@ -1,3 +1,10 @@
--- Na tabela salario_classe altere o atributo "nivel" para que seu tipo de dado seja varchar, com tamanho máximo de 50 caracteres
+--DROP TABLE salario_classe;
+CREATE TABLE salario_classe (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+nivel varchar(50),
+salario INTEGER
+);
+-- não fi possível excluir uma coluna, então recriei a tabela com ua nova. excluindo a antiga.
 
--- Na tabela employees, adicione uma coluna para receber o id_salario
+ALTER TABLE employees
+ADD id_salario INTEGER;
